@@ -1,3 +1,4 @@
+//clases
 class Compra{
     constructor(producto, material, marca, linkFoto){
 
@@ -11,8 +12,9 @@ class Compra{
 
 
 }
-
+//Nombre del usuario que ingresara 
 let nombreUsuario;
+
 document.getElementById("formulario-usuario").addEventListener("submit", manejadorFormularioUsuario);
 
 function manejadorFormularioUsuario(eventoComprar){
@@ -30,6 +32,8 @@ function manejadorFormularioUsuario(eventoComprar){
     }
     mosrtarPanel();
 }
+
+//Muestra en el storage y en pantalla la compra que el usuario hizo
 
 function mosrtarCompra(compras){
     let listadoCompras = document.getElementById("listadoCompras")
@@ -52,6 +56,8 @@ function mosrtarCompra(compras){
 
 }
 
+//Muestra en la pantalla y ademas escucha a la funcion "agregarCompra"
+
 function mosrtarPanel(){
 
 
@@ -72,7 +78,7 @@ function mosrtarPanel(){
 
 }
 
-
+//Agrega la compra a la array y la muestra en el locaStorage y en la pantalla
 function agregarCompra(e){
 
     e.preventDefault();
@@ -98,7 +104,7 @@ function agregarCompra(e){
 
 }
 
-
+//Elimina la compra cuando se apreta el boton Borrar
 
 function eliminarCompra(compra){
 
