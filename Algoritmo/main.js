@@ -65,6 +65,9 @@ function mosrtarPanel(){
 
     opciones.innerHTML = `
         <h3> Bienvenido ${nombreUsuario}</h3>
+        <p>Porfavor ingrese aguno de los siguientes productos. Collar, aros, piedras, anillos y pulseras </p>
+        <p> Cada Uno con su respectiva marca y material</p>
+        <p>Y algun link de alguna foto que se pueda mostrar sin problema</p>
         <form id="formulario-compra">
             <input type="text" id="producto" placeholder="Producto">
             <input type="text" id="material" placeholder="Material">
